@@ -9,35 +9,37 @@
 
     <body>
         <nav class="navbar navbar-default">
-            <div class="row" >
-                <a class="btn btn-primary" href="#LatitudeAnalysis" role="button">Latitude Analysis</a>
-                <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Plots
-                    </button>
-                    <div class="dropdown-menu", aria-labelledby="dropdownMenuLink">
-                        <a href="#Temperature">Temperature</a>
-                        <a href="#Cloudiness">Cloudiness</a>
-                        <a href="#Wind Speed">Wind Speed</a>
-                        <a href="#Humidity">Humidity</a>
-                    </div>
-                <a class ="btn btn-primary" href="#Comparisons" role="button">Comparison</a>
-                <a class ="btn btn-primary" href="#Data" role="button">Data</a>
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#LatitudeAnalysis">Latitude Analysis</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">
+                        Plots<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#Temperature">Temperature</a></li>
+                        <li><a href="#Cloudiness">Cloudiness</a></li>
+                        <li><a href="#Wind Speed">Wind Speed</a></li>
+                        <li><a href="#Humidity">Humidity</a></li>
+                    </ul>
+                    <li><a href="#Comparisons">Comparison</a></li>
+                    <li><a  href="#Data">Data</a></li>
+                </ul>
             </div>
         </nav>
 
         <div class="container">
-            
             <section class="imagenav-area">
                 <div class="imagenav-content">
                     <header>
-                        <h1>Temperature Analysis</h1>
+                        <h1 style="text-align:center; color:rgb(44, 44, 138); font-family:georgia;">Temperature Analysis</h1>
                     </header>
                 </div>
-                <div class="idimage">
-                    <a href="TempChart.html">Latitude vs. Temperature <img src="Fig1.png" width="" height=""></a>
+                <div id="Chart" class="idimage">
+                    <a href="TempChart.png" id="TempChart">Latitude vs. Temperature <img src="TempChart.png" width="800px" height="550px" alt="Temperature"></a>
                 </div>
-                <article>
+                <article id="Description">
                     <p>
                         The data shows a strong correlation between latitude and maximum temperature.
                         The farther one gets from the equator, the colder a location gets.

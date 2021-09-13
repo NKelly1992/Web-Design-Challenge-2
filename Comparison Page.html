@@ -8,49 +8,52 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-default">
-            <div class="row" >
-                <a class="btn btn-primary" href="#LatitudeAnalysis" role="button">Latitude Analysis</a>
-                <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Plots
-                    </button>
-                    <div class="dropdown-menu", aria-labelledby="dropdownMenuLink">
-                        <a href="#Temperature">Temperature</a>
-                        <a href="#Cloudiness">Cloudiness</a>
-                        <a href="#Wind Speed">Wind Speed</a>
-                        <a href="#Humidity">Humidity</a>
-                    </div>
-                <a class ="btn btn-primary" href="#Comparisons" role="button">Comparison</a>
-                <a class ="btn btn-primary" href="#Data" role="button">Data</a>
+        <nav class="navbar navbar-default; ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#LatitudeAnalysis">Latitude Analysis</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        Plots<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#Temperature">Temperature</a></li>
+                        <li><a href="#Cloudiness">Cloudiness</a></li>
+                        <li><a href="#Wind Speed">Wind Speed</a></li>
+                        <li><a href="#Humidity">Humidity</a></li>
+                    </ul>
+                    <li><a href="#Comparisons">Comparison</a></li>
+                    <li><a  href="#Data">Data</a></li>
+                </ul>
             </div>
         </nav>
 
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h2>Comparisons</h2>
-                    <p>Click any plot for an in-depth analysis</p>
+                    <h1 style="text-align:center; color:rgb(44, 44, 138); font-family:georgia;">Comparisons</h1>
+                    <p style="text-align:center; color:rgb(44, 44, 138); font-family:georgia;">Click any plot for an in-depth analysis</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
-                    <h3>Latitude vs. Temperature</h3>
-                    <a href="TempChart.html">Latitude vs. Temperature <img src="Fig1.png" width="350" height="200"></a>
+                <div class="col-md-4" id="box-1">
+                    <h3 style="text-align:center; color:rgb(44, 44, 138); font-family:georgia;">Latitude vs. Temperature</h3>
+                    <a href="TempChart.png" id="TempChart">Latitude vs. Temperature <img src="TempChart.png" width="300px" height="200px" alt="Temperature"></a>
                 </div>
-                <div class="col=md-4">
-                    <h3>Latitude vs. Cloudiness</h3>
-                    <a href="CloudChart.html">Latitude vs. Cloudiness <img src="Fig3.png" width="350" height="200"></a>
+                <div class="col=md-4" id="box-2">
+                    <h3 style="text-align:center; color:rgb(44, 44, 138); font-family:georgia;">Latitude vs. Cloudiness</h3>
+                    <a href="CloudChart.png" id="CloudChart">Latitude vs. Cloudiness <img src="CloudChart.png" width="300px" height="200px" alt="Cloudiness"></a>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
-                    <h3>Latitude vs. Wind Speed</h3>
-                    <a href="WindChart.html">Latitude vs. Wind Speed <img src="Fig4.png" width="350" height="200"></a>
+                <div class="col-md-4" id="box-3">
+                    <h3 style="text-align:center; color:rgb(44, 44, 138); font-family:georgia;">Latitude vs. Wind Speed</h3>
+                    <a href="WindChart.png" id="WindChart">Latitude vs. Wind Speed <img src="WindChart.png" width="300px" height="200px"></a>
                 </div>
-                <div class="col=md-4">
-                    <h3>Latitude vs. Humidity</h3>
-                    <a href="HumidChart.html">Latitude vs. Humidity <img src="Fig2.png" width="350" height="200"></a>
+                <div class="col=md-4" id="box-4">
+                    <h3 style="text-align:center; color:rgb(44, 44, 138); font-family:georgia;">Latitude vs. Humidity</h3>
+                    <a href="HumidChart.png" id="HumidChart">Latitude vs. Humidity <img src="HumidChart.png" width="300px" height="200px"></a>
                 </div>
             </div>
         </div>

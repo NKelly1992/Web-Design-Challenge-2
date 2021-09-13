@@ -31,41 +31,48 @@
     </nav>
 
     <header>
-        <h1>Summary</h1>
+        <h1 style="text-align:center; color:rgb(44, 44, 138); font-family:georgia;">Summary</h1>
     </header>
 
     <div class="container">
         <section id="summary">
             <div class="row">
-            <section>
-                <h2 id="paragraph-header">The Project</h2>
-                <br>
-                <p>
-                    The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the 
-                    OpenWeatherMAP API to assemble a dataset on over 500 cities.
-                </p>
-                <br>
-                <p>
-                    After assembling the dataset, we used matplotlib to plot various aspects of the weather vs. latitude. Factors we look at included:
-                    temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis,
-                    as well as explanations and descriptions of any trends and correlations witnessed.
-                </p>
-            </section>
+                <div class="col-md-6">
+                    <section id="paragraph">
+                        <h2 style="text-align:center; color:rgb(44, 44, 138);font-family:georgia" id="paragraph-header">The Project</h2>
+                        <br>
+                        <p>
+                            The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the 
+                            OpenWeatherMAP API to assemble a dataset on over 500 cities.
+                        </p>
+                        <br>
+                        <p>
+                            After assembling the dataset, we used matplotlib to plot various aspects of the weather vs. latitude. Factors we look at included:
+                            temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis,
+                            as well as explanations and descriptions of any trends and correlations witnessed.
+                        </p>
+                    </section>
+                </div>
             </div>
             <section>
-                <div class="container">
+                <div class="w3-container w3-blue" id="Visualization-Bar">
                     <article class="description-contentrow">
-                        <div class="col-xs-12">
-                            <li><a href="TempChart.html">Latitude vs. Temperature <img src="Fig1.png" width="" height=""></a></li>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <li><a href="TempChart.png" id="TempChart" style="color:white">Latitude vs. Temperature <img src="TempChart.png" width="200px" height="150px" alt="Temperature"></a></li>
+                            </div>
+                            <div class="col-md-3">
+                                <li><a href="CloudChart.png" id="CloudChart" style="color:white">Latitude vs. Temperature <img src="CloudChart.png" width="200px" height="150px" alt="Cloudiness"></a></li>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <li><a href="CloudChart.html">Latitude vs. Cloudiness <img src="Fig3.png" width="" height=""></a></li>
-                        </div>
-                        <div class="col-md-6">
-                            <li><a href="WindChart.html">Latitude vs. Wind Speed <img src="Fig4.png" width="" height=""></a></li>
-                        </div>
-                        <div class="col-md-6">
-                            <li><a href="HumidChart.html">Latitude vs. Humidity <img src="Fig2.png" width="" height=""></a></li>
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <li><a href="WindChart.png" id="WindChart" style="color: white">Latitude vs. Wind Speed <img src="WindChart.png" width="200px" height="150px" alt="Wind Speed"></a></li>
+                            </div>
+                            <div class="col-md-3">
+                                <li><a href="HumidChart.png" id="HumidChart" style="color: white">Latitude vs. Humidity <img src="HumidChart.png" width="200px" height="150px" alt="Humidity"></a></li>
+                            </div>
                         </div>
                     </article>
                 </div>

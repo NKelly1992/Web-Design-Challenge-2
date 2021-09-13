@@ -4,34 +4,37 @@
         <meta charset="UTF-8">
         <title>Data Table</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-        <link rel="stylesheet" href="DateStyle.css">
+        <link rel="stylesheet" href="DataStyle.css">
     </head>
 
     <body>
-        <nav class="navbar navbar-default">
-            <div class="row" >
-                <a class="btn btn-primary" href="#LatitudeAnalysis" role="button">Latitude Analysis</a>
-                <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Plots
-                    </button>
-                    <div class="dropdown-menu", aria-labelledby="dropdownMenuLink">
-                        <a href="#Temperature">Temperature</a>
-                        <a href="#Cloudiness">Cloudiness</a>
-                        <a href="#Wind Speed">Wind Speed</a>
-                        <a href="#Humidity">Humidity</a>
-                    </div>
-                <a class ="btn btn-primary" href="#Comparisons" role="button">Comparison</a>
-                <a class ="btn btn-primary" href="#Data" role="button">Data</a>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#LatitudeAnalysis" >Latitude Analysis</a>
             </div>
-        </nav>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    Plots<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#Temperature">Temperature</a></li>
+                    <li><a href="#Cloudiness">Cloudiness</a></li>
+                    <li><a href="#Wind Speed">Wind Speed</a></li>
+                    <li><a href="#Humidity">Humidity</a></li>
+                </ul>
+                <li><a href="#Comparisons">Comparison</a></li>
+                <li><a  href="#Data">Data</a></li>
+            </ul>
+        </div>
+    </nav>
         <div class="container">
             <header>
-                <h1>Data</h1>
+                <h1 style="text-align:center; color:rgb(44, 44, 138); font-family:georgia;">Data</h1>
             </header>
-            <div class="table-responsive">
+            <div class="table-responsive" style="overflow-x:auto">
                 <div class="table">
-                    <table border="1" class="dataframe">
+                    <table class="table-primary" class="dataframe">
                         <thead>
                           <tr style="text-align: right;">
                             <th></th>

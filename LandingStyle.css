@@ -1,0 +1,20 @@
+.navbar {
+    overflow: hidden;
+    background-color: #3c3782;
+    font-family: Georgia;
+}
+
+.navbar a {
+    float: right;
+    overflow: hidden;
+    text-align: left;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+

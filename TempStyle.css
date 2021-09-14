@@ -1,14 +1,15 @@
 .navbar {
-    overflow: hidden;
+    overflow: visible;
     background-color: #3c3782;
     font-family: Georgia;
     align-content: right;
     position: sticky;
+    visibility: visible;
 }
 
 .navbar a {
     float: right;
-    overflow: hidden;
+    overflow: visible;
     text-align: left;
     font-size: 16px;
     color: white;
@@ -16,8 +17,10 @@
 }
 
 .dropdown {
-    float: right;
+    float: visible;
+    display: block;
     overflow: hidden;
+    visibility: visible;
 }
 
 body {

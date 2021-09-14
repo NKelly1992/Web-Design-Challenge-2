@@ -8,23 +8,29 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-default">
+        <!--<nav class="navbar navbar-default; ">-->
+        <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="Landing Page.html">Latitude Analysis</a>
                 </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
                 <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown">
-                        Plots<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="Temperature Visualization Page.html">Temperature</a></li>
-                        <li><a href="Cloudiness Visualization Page.html">Cloudiness</a></li>
-                        <li><a href="Wind Speed Visualization Page.html">Wind Speed</a></li>
-                        <li><a href="Humidity Visualization Page.html">Humidity</a></li>
+                    <li class="dropdown nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Plots</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="Temperature Visualization Page.html">Temperature</a></li>
+                        <li><a class="dropdown-item" href="Cloudiness Visualization Page.html">Cloudiness</a></li>
+                        <li><a class="dropdown-item" href="Wind Speed Visualization Page.html">Wind Speed</a></li>
+                        <li><a class="dropdown-item" href="Humidity Visualization Page.html">Humidity</a></li>
                     </ul>
-                    <li><a href="Comparison Page.html">Comparisons</a></li>
-                    <li><a  href="Data Page.html">Data</a></li>
+                    </li>
+                    <li class="nav-item"><a href="Comparison Page.html" class="nav-link">Comparisons</a></li>
+                    <li class="nav-item"><a href="Data Page.html" class="nav-link">Data</a></li>
                 </ul>
             </div>
         </nav>
